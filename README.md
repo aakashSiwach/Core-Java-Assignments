@@ -15,4 +15,4 @@
 <b>13. Methods Overloading</b></br>
 <b>14. Exceptions</b></br>
 <b>15. Java I/O</b></br>
-<b>16. Collectons</b></br>
+<b>16. Collections</b></br>
