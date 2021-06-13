@@ -1,0 +1,298 @@
+1. Write a program to print “Bright IT Career” ten times using for loop
+2. Write a java program to print 1 to 20 numbers using the while loop.
+3. Program to equal operator and not equal operators
+4. Write a program to print the odd and even numbers.
+5. Write a program to print largest number among three numbers.
+6. Write a program to print even number between 10 and 100 using while
+7. Write a program to print 1 to 10 using the do-while loop statement.
+8. Write a program to find Armstrong number or not
+9. Write a program to find the prime or not.
+10. Write a program to palindrome or not.
+11. Program to check whether a number is EVEN or ODD using switch
+12. Print gender (Male/Female) program according to given M/F using switch
+13. Program for multiple if else statement(Largest number in 10,20 and 30)
+
+************************************************************************************************************************************************************************
+1. Write a program to print “Bright IT Career” ten times using for loop
+
+import java.io.Console;
+
+public class tenTimeLoop {
+    public static void main(String [] args) {
+        for(int i = 1;i<=10;i++)
+        {
+            System.out.println(i+". Bright IT Career");
+        }
+    }
+    
+}
+
+************************************************************************************************************************************************************************
+2. Write a java program to print 1 to 20 numbers using the while loop.
+
+public class countingToTwenty {
+     public static void main (String [] args) {
+        int i=1;
+        while(i<=20)
+        {
+            System.out.println(i);
+            i++;
+        }
+    }
+     
+}
+
+
+************************************************************************************************************************************************************************
+3. Program to equal operator and not equal operators
+
+public class equalNotEqualLoop {
+    public static void main (String [] args) {
+        for(int i = 1;i<=20;i++)
+        {
+            if(i%2!=0)
+            {
+                System.out.println(i+" is not Divisible by 2.     ");
+            }
+            if(i%5==0)
+            {
+                System.out.print(i+" Divisible by 5");
+            }
+        }
+    }
+}
+
+************************************************************************************************************************************************************************
+4. Write a program to print the odd and even numbers.
+public class printOddEven 
+{
+    public static void main (String [] args) 
+    {   
+        for(int i = 10;i<=20;i++)
+        {
+            if(i%2==0)
+            {
+                System.out.println("      "+i+" is Even Number");
+            }
+            if(i%2!=0)
+            {
+                System.out.print(i+" is odd number");
+            }
+        }
+    }
+}
+
+************************************************************************************************************************************************************************
+5. Write a program to print largest number among three numbers.
+
+import java.util.*;
+public class largestNumber 
+{
+    public static void main(String []args) 
+    {
+        Scanner cv = new Scanner(System.in);
+        int i = cv.nextInt();
+        int j = cv.nextInt();
+        int k = cv.nextInt();
+        cv.close();
+        int x = (i > j && i > k) ? i : (j > k) ? j : k;
+        System.out.println("Largetest Number : "+x);
+    }
+}
+
+************************************************************************************************************************************************************************
+6. Write a program to print even number between 10 and 100 using while
+
+public class countWhile {
+    public static void main (String [] args) 
+    {
+        int i = 11;
+        while(i <=100)
+        {
+            if(i%2==0)
+             System.out.println(i);
+            i++;
+        }
+    }
+}
+
+************************************************************************************************************************************************************************
+7. Write a program to print 1 to 10 using the do-while loop statement.
+
+public class doWhileTen {
+   public static void main(String [] args)
+   {
+      int i =1;
+      do
+      { 
+        System.out.println(i);
+        i++;
+      }
+      while(i<=10);
+   }
+}
+
+************************************************************************************************************************************************************************
+8. Write a program to find Armstrong number or not
+
+import java.util.Scanner;
+
+public class armstorng {
+    public static void main(String [] args)
+    {
+        int originalNumber, remainder, result = 0;
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        sc.close();
+        originalNumber = number;
+
+        while (originalNumber != 0)
+        {
+            remainder = originalNumber % 10;
+            result += Math.pow(remainder, 3);
+            originalNumber /= 10;
+        }
+
+        if(result == number)
+            System.out.println(number + " is an Armstrong number.");
+        else
+            System.out.println(number + " is not an Armstrong number.");
+    
+    }
+}
+
+************************************************************************************************************************************************************************
+9. Write a program to find the prime or not.
+
+import java.util.Scanner;
+
+public class checkPrime {
+    public static void main(String [] args)
+    {
+        int i,m=0,flag=0;      
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();   
+        m=n/2;      
+        if(n==0||n==1)
+        {  
+            System.out.println(n+" is not prime number");      
+        } else 
+        {  
+            for(i=2;i<=m;i++)
+            {      
+                if(n%i==0)
+                {      
+                    System.out.println(n+" is not prime number");      
+                    flag=1;      
+                    break;      
+                }      
+            }      
+            if(flag==0)
+            {
+                System.out.println(n+" is prime number"); 
+            }  
+        }//end of else  
+    }
+}
+
+************************************************************************************************************************************************************************
+10. Write a program to palindrome or not.
+
+import java.util.*;
+public class checkPalindrome {
+    public static void main(String [] args)
+    {
+        int r,sum=0,temp;    
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();  
+        temp=n;    
+        while(n>0)
+        {    
+         r=n%10;  //getting remainder  
+         sum=(sum*10)+r;    
+         n=n/10;    
+        }    
+        if(temp==sum)  
+        {  
+             System.out.println(" is palindrome number ");    
+        }
+        else
+        {    
+            System.out.println(" is not palindrome");
+        }
+    }
+}
+
+************************************************************************************************************************************************************************
+11. Program to check whether a number is EVEN or ODD using switch
+
+import java.util.*;
+public class CheckEvenOdd {
+    public static void main(String [] args)
+    {
+        Scanner scan=new Scanner(System.in); 
+        System.out.print("Enter the integer number: ");
+        int num = scan.nextInt();
+        switch(num%2){//this will return either 0 or 1
+        case 0:
+            System.out.println(num+" is a Even number");
+            break;
+        case 1:
+            System.out.println(num+" is a Odd number");
+        }
+    }
+}
+
+************************************************************************************************************************************************************************
+12. Print gender (Male/Female) program according to given M/F using switch
+
+import java.util.*;
+
+import org.graalvm.compiler.lir.aarch64.AArch64ControlFlow.StrategySwitchOp.SwitchClosure;
+
+public class maleFemale {
+    public static void main(String [] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        String gender = sc.next();
+        char ans;
+        ans = gender.charAt(0);
+        sc.close();
+        switch(ans)
+        {
+            case 'M':
+            case 'm':
+                System.out.println("Male");
+                break;
+            case 'F':
+            case 'f':
+                System.out.println("Female");
+                break;
+            default:
+                System.out.println("Unspecified Gender\n");
+        }
+    }
+}
+
+************************************************************************************************************************************************************************
+13. Program for multiple if else statement(Largest number in 10,20 and 30)
+
+public class multiIfElse {
+    public static void main(String [] args)
+    {
+        int num1 = 10, num2 = 20, num3 = 30;
+
+        if( num1 >= num2 && num1 >= num3)
+            System.out.println(num1+" is the largest Number");
+  
+        else if (num2 >= num1 && num2 >= num3)
+            System.out.println(num2+" is the largest Number");
+  
+        else
+            System.out.println(num3+" is the largest Number");
+    }
+}
+
+
