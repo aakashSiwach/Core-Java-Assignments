@@ -1,0 +1,208 @@
+Core Java Basics
+1. How to create a class, object, method and its signature.
+2. Write a program to print your name.
+3. Write a program for a Single line comment, multi-line and documentation comments.
+4. Define variables for different Data Types int, Boolean, char, float, double and print on the Console.
+5. Define the local and Global variables with the same name and print both variables and 
+understand the scope of the variables.
+6. Write a function to print your name and call the function from main method.
+
+1. How to create a class, object, method and its signature.
+Class
+-----
+A class is a user defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order: 
+
+Modifiers: A class can be public or has default access (Refer this for details).
+class keyword: class keyword is used to create a class.
+Class name: The name should begin with an initial letter (capitalized by convention).
+Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+Body: The class body surrounded by braces, { }.
+
+class classname
+{
+
+}
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+Object
+------
+It is a basic unit of Object-Oriented Programming and represents the real life entities.  A typical Java program creates many objects, which as you know, interact by invoking methods. An object consists of : 
+
+State: It is represented by attributes of an object. It also reflects the properties of an object.
+Behavior: It is represented by methods of an object. It also reflects the response of an object with other objects.
+Identity: It gives a unique name to an object and enables one object to interact with other objects.
+Example of an object: dog
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+Method
+------
+public int sum (int a)
+{
+	//method body Signature
+}
+
+
+public:Access Specifier
+int: Return Type
+sum: Method Name
+(int a): Parameter List
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+Signature
+---------
+
+public void setMapReference(int xCoordinate, int yCoordinate)
+{
+//method code
+}
+
+
+public void setMapReference(Point position)
+{
+//method code
+}
+
+public double calculateAnswer(double wingSpan, int numberOfEngines, double length, double grossTons) 
+{
+   //method code
+}
+
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+2. Write a program to print your name.
+
+class name
+{
+	public static void main(String [] args)
+	{
+		System.out.println("Aakash");
+	}
+}
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+3. Write a program for a Single line comment, multi-line and documentation comments.
+
+import java.util.*;
+/**
+ * This is a single line Comment
+ * @author Aakash
+
+ */
+
+class comment
+{
+    public static void main (String [] args){
+//This is a single line Comment
+System.out.println("Single Line Comment");
+/*
+This is a multi line Comment
+*/
+
+System.out.println("Multi Line Comment");
+
+    }
+
+}
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+4. Define variables for different Data Types int, Boolean, char, float, double and print on the Console.
+
+class variable
+{
+	public static void main(String args[])
+	{
+		// boolean 
+		boolean y = true;
+		if (y == true)
+			System.out.println("Aakash");
+    	
+		byte x = 126;
+    	// byte is 8 bit value
+     	System.out.println(x);
+
+      // declaring character
+        char a = 'G';
+  
+        // Integer data type is generally
+        // used for numeric values
+        int i = 89;
+  
+        // use byte and short
+        // if memory is a constraint
+        byte b = 4;
+  
+        // this will give error as number is
+        // larger than byte range
+        // byte b1 = 7888888955;
+  
+        short s = 56;
+  
+        // this will give error as number is
+        // larger than short range
+        // short s1 = 87878787878;
+  
+        // by default fraction value
+        // is double in java
+        double d = 4.355453532;
+  
+        // for float use 'f' as suffix
+        float f = 4.7333434f;
+  
+        System.out.println("char: " + a);
+        System.out.println("integer: " + i);
+        System.out.println("byte: " + b);
+        System.out.println("short: " + s);
+        System.out.println("float: " + f);
+        System.out.println("double: " + d);
+	}
+}
+
+
+
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+5. Define the local and Global variables with the same name and print both variables and 
+understand the scope of the variables.
+
+Local Variable
+Local Variable is defined as a type of variable declared within programming block or subroutines. It can only be used inside the subroutine or code block in which it is declared. The local variable exists until the block of the function is under execution. After that, it will be destroyed automatically.
+
+Example of Local Variable
+
+public int add(){
+int a =4;
+int b=5;
+return a+b;
+}
+Here, 'a' and 'b' are local variables
+
+Global Variable
+A Global Variable in the program is a variable defined outside the subroutine or function. It has a global scope means it holds its value throughout the lifetime of the program. Hence, it can be accessed throughout the program by any function defined within the program, unless it is shadowed.
+
+Example:
+
+int a =4;
+int b=5;
+public int add(){
+return a+b;
+}
+Here, 'a' and 'b' are global variables.
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+6. Write a function to print your name and call the function from main method.
+
+class function 
+{
+
+	public static void main(String[] args)
+	{
+	      name();
+	}
+
+	static void name()
+	{
+		System.out.println("Aakash");
+	}
+
+}
