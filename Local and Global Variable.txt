@@ -1,0 +1,23 @@
+Local Variable
+Local Variable is defined as a type of variable declared within programming block or subroutines. It can only be used inside the subroutine or code block in which it is declared. The local variable exists until the block of the function is under execution. After that, it will be destroyed automatically.
+
+Example of Local Variable
+
+public int add(){
+int a =4;
+int b=5;
+return a+b;
+}
+Here, 'a' and 'b' are local variables
+
+Global Variable
+A Global Variable in the program is a variable defined outside the subroutine or function. It has a global scope means it holds its value throughout the lifetime of the program. Hence, it can be accessed throughout the program by any function defined within the program, unless it is shadowed.
+
+Example:
+
+int a =4;
+int b=5;
+public int add(){
+return a+b;
+}
+Here, 'a' and 'b' are global variables.

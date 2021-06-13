@@ -1,0 +1,59 @@
+Class
+-----
+A class is a user defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order: 
+
+Modifiers: A class can be public or has default access (Refer this for details).
+class keyword: class keyword is used to create a class.
+Class name: The name should begin with an initial letter (capitalized by convention).
+Superclass(if any): The name of the class’s parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+Interfaces(if any): A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+Body: The class body surrounded by braces, { }.
+
+class classname
+{
+
+}
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+Object
+------
+It is a basic unit of Object-Oriented Programming and represents the real life entities.  A typical Java program creates many objects, which as you know, interact by invoking methods. An object consists of : 
+
+State: It is represented by attributes of an object. It also reflects the properties of an object.
+Behavior: It is represented by methods of an object. It also reflects the response of an object with other objects.
+Identity: It gives a unique name to an object and enables one object to interact with other objects.
+Example of an object: dog
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+Method
+------
+public int sum (int a)
+{
+	//method body Signature
+}
+
+
+public:Access Specifier
+int: Return Type
+sum: Method Name
+(int a): Parameter List
+
+*********************************************************************************************************************************************************************************************************************************************************************************
+Signature
+---------
+
+public void setMapReference(int xCoordinate, int yCoordinate)
+{
+//method code
+}
+
+
+public void setMapReference(Point position)
+{
+//method code
+}
+
+public double calculateAnswer(double wingSpan, int numberOfEngines, double length, double grossTons) 
+{
+   //method code
+}
