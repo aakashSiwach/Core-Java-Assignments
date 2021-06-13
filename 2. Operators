@@ -1,0 +1,225 @@
+    2. Operators
+1. Write a function for arithmetic operators(+,-,*,/).
+2. Write a method for increment and decrement operators(++, --).
+3. Program to equal operator and not equal operators.
+4. Write a program to find the two numbers equal or not.
+5. Programs on Logical AND,OR operator and Logical NOT
+6. Program for relational operators (<,<==, >, >==).
+7. Print the smaller and larger number.
+
+
+******************************************************************************************************************************************************************************
+1. Write a function for arithmetic operators(+,-,*,/).
+
+class function 
+{
+
+	public static void main(String[] yrgs)
+	{
+		  int res=0;
+	      res = add(50,100);
+		  System.out.println(res);
+	      res = sub(50,100);
+		  System.out.println(res);
+	      res = mul(10,90);
+		  System.out.println(res);
+	      res = div(2,10);
+		  System.out.println(res);
+	}
+
+	 public static int add(int y,int x)
+	{
+		return y+x;
+	}
+	public static int sub(int y,int x)
+	{
+		return y-x;
+	}
+	public static int mul(int y,int x)
+	{
+		return y*x;
+	}
+	public static int div(int y,int x)
+	{
+		return y/x;
+	}
+
+}
+******************************************************************************************************************************************************************************
+2. Write a method for increment and decrement operators(++, --).
+
+ class Example {
+    
+       public int data = 0; // Each instance of Example holds its internal data. This is a "field", or "member variable".
+    
+       public void Updatepostfix() // .. and manipulates it (This is a method by the way)
+       {
+          data++;
+       }
+       public void Updateprefix() // .. and manipulates it (This is a method by the way)
+       {
+          ++data;
+       }
+       public void Updatepostfixm() // .. and manipulates it (This is a method by the way)
+       {
+          data--;
+       }
+       public void Updateprefixm() // .. and manipulates it (This is a method by the way)
+       {
+          --data;
+       }
+       public void PrintData() // This is also a method
+       {
+          synchronized (System.out) {
+             System.out.println(data);
+         }
+       }
+}
+    
+    class decrementOperators
+    {
+       public static void main (String [] arh)
+       {
+           Example exampleObject1 = new Example();
+           
+    
+           exampleObject1.Updatepostfix();
+           exampleObject1.PrintData();
+           exampleObject1.Updateprefix();
+           exampleObject1.PrintData();
+           exampleObject1.Updatepostfixm();
+           exampleObject1.PrintData();
+           exampleObject1.Updateprefixm();
+           exampleObject1.PrintData();         
+       }
+    }
+
+******************************************************************************************************************************************************************************
+3. Program to equal operator and not equal operators.
+
+public class equalNotEqual {
+    public static void main (String [] arh)
+    {
+        int a=2,b=5,c=2;
+        Boolean res;
+        res= (a==b);
+        System.out.println(a+" equal to  "+b+" : "+res);
+        res= (a==c);
+        System.out.println(a+" a equal to c: "+c+" : "+res);
+        res= (b!=c);
+        System.out.println(a+" a is not equal to c: "+c+" : "+res); 
+        res= (a!=b);
+        System.out.println(a+" a is not equal to b: "+b+" : "+res);          
+    }
+}
+
+
+
+******************************************************************************************************************************************************************************
+4. Write a program to find the two numbers equal or not.
+
+import java.util.Scanner;
+
+public class checkEqual {
+    public static void main (String [] arh)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first Integer");
+        int a = sc.nextInt();
+        System.out.println("Enter second Integer");
+        int b = sc.nextInt();
+       /*
+        Boolean res;
+        res= (a==b);
+        System.out.println("a equal to b: "+res);
+        res= (a==c);
+        */  if(a==b)
+        {
+            System.out.println(a+" equal to "+b); 
+        }
+        else{
+            System.out.println(a+" is not equal to "+b);
+        }
+    }
+    
+}
+
+
+
+******************************************************************************************************************************************************************************
+5. Programs on Logical AND,OR operator and Logical NOT
+
+public class logicalOperators {
+    public static void main(String[] args)
+    {
+        
+        int a = 10, b = 20, c = 20, d = 0;
+        System.out.println("*********************AND Logical Operator********************************");
+        System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+        System.out.println("Var3 = " + c);
+  
+        
+        if ((a < b) && (b == c)) {
+            d = a + b + c;
+            System.out.println("The sum is: " + d);
+        }
+        else
+            System.out.println("False conditions");
+
+        System.out.println("*********************OR Logical Operator********************************");
+        System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+        System.out.println("Var3 = " + c);
+        if (a > b || c == d){
+            System.out.println("One or both" + " the conditions are true");
+        }
+        else{
+            System.out.println("Both the" + " conditions are false");
+        }
+        System.out.println("*********************NOT Logical Operator********************************");
+        System.out.println("Var1 = " + a);
+        System.out.println("Var2 = " + b);
+        System.out.println("!(a < b) ="+ !(a < b));
+        System.out.println("!(a > b) ="+ !(a > b));
+    }
+
+    
+}
+
+******************************************************************************************************************************************************************************
+6. Program for relational operators (<,<==, >, >==).
+
+public class relationalOperator {
+    public static void main(String args[]) {
+        int a = 10;
+        int b = 20;
+  
+        System.out.println("a == b = " + (a == b) );
+        System.out.println("a != b = " + (a != b) );
+        System.out.println("a > b = " + (a > b) );
+        System.out.println("a < b = " + (a < b) );
+        System.out.println("b >= a = " + (b >= a) );
+        System.out.println("b <= a = " + (b <= a) );
+     }
+}
+
+******************************************************************************************************************************************************************************
+7. Print the smaller and larger number.
+
+
+import java.util.Scanner;
+
+public class smallerGreater {
+    public static void main(String []args) 
+    {
+        Scanner cv = new Scanner(System.in);
+        int i = cv.nextInt();
+        int j = cv.nextInt();
+        int k = cv.nextInt();
+        int x = (i > j && i > k) ? i : (j > k) ? j : k;
+        int y = (i < j && i < k) ? i : (j < k) ? j : k;
+        System.out.println("Largetest Number : "+x);
+        System.out.println("Smallest Number : "+y);
+    }
+}
